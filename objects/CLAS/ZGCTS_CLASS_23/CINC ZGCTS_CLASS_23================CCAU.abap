@@ -25,7 +25,7 @@ CLASS lc_tadir_unit_test IMPLEMENTATION.
 
 *    SELECT * FROM tadir UP  TO 4 ROWS INTO CORRESPONDING FIELDS OF TABLE @lt_table
 *      WHERE devclass = 'MB' AND obj_name LIKE 'Z%'.
-* SAPDX21_23 )))
+
 
       lt_table = VALUE #(
       ( pgmid = 'R3TR' object = 'DOMA' obj_name = 'Z1' devclass = 'ZZZ' )
@@ -33,7 +33,7 @@ CLASS lc_tadir_unit_test IMPLEMENTATION.
       ( pgmid = 'R3TR' object = 'DOMA' obj_name = 'Z3' devclass = 'ZZZ' )
       ( pgmid = 'R3TR' object = 'DOMA' obj_name = 'Z4' devclass = 'YYY' )
       "!!! comment this row to activate AUnit error
-      "( pgmid = 'R3TR' object = 'DOMA' obj_name = 'Z5' devclass = 'ZZZ' )
+      ( pgmid = 'R3TR' object = 'DOMA' obj_name = 'Z5' devclass = 'ZZZ' )
       ).
 
     "DDIC
